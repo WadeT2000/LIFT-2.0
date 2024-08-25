@@ -1,0 +1,206 @@
+/* General container styles */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Card styles */
+.card {
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 11px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  position: relative;
+}
+
+/* Dark mode card */
+body.dark-mode .card {
+  background-color: #444;
+  color: #FFFFFF;
+  box-shadow: 0px 9px 46px 8px rgba(255, 255, 255, 0.12), 0px 24px 38px 3px rgba(255, 255, 255, 0.14), 0px 11px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Dark mode toggle container */
+.darkmode-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Dark mode toggle button styles */
+.mode-toggle-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 0;
+}
+
+.mode-toggle-button.dark-mode {
+  background-color: #555;
+  color: #fff;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Form button container styles */
+.form-button {
+  display: flex;
+  justify-content: center; /* Center align the "Add Single Patient" button */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Patient list styles */
+.patient-list {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: #F8F9FA;
+}
+
+body.dark-mode .patient-list {
+  background-color: #444;
+  border-color: #666;
+}
+
+/* Patient list item */
+.patient-list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+.patient-list-item:last-child {
+  border-bottom: none;
+}
+
+body.dark-mode .patient-list-item {
+  background-color: #555;
+  color: #fff;
+  border-bottom-color: #555;
+}
+
+/* Radio button styles */
+.p-radiobutton {
+  margin-left: auto;
+}
+
+/* ListBox styles */
+.p-listbox {
+  background-color: #fff;
+  color: #000;
+  padding: 0;
+}
+
+body.dark-mode .p-listbox {
+  background-color: #333;
+  color: #fff;
+}
+
+.p-listbox-item {
+  display: flex;
+  justify-content: space-between; /* Space between content and radio button */
+  align-items: center;
+  padding: 10px; /* Add padding around the content */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  width: 100%; /*Ensure the item takes up full width */
+}
+
+/* Content container within the ListBox item */
+.p-listbox-item-content {
+  flex: 1; /* Allow the content to grow and take available space */
+  margin-right: 10px; /* Space between content and radio button */
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center content horizontally */
+  text-align: center; /* Center text within the content */
+}
+
+body.dark-mode .p-listbox-item {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Heading styles */
+.heading-list {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+body.dark-mode .heading-list {
+  color: #fff;
+}
+
+/* Patient container styles */
+.patient-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Card styles for patient section */
+.patient-card {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 11px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode for patient container and card */
+body.dark-mode .patient-container {
+  background-color: #444;
+}
+
+body.dark-mode .patient-card {
+  background-color: #444;
+  color: #FFFFFF;
+  box-shadow: 0px 9px 46px 8px rgba(255, 255, 255, 0.12), 0px 24px 38px 3px rgba(255, 255, 255, 0.14), 0px 11px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Additional styles for attendants list */
+.attendant-container {
+  background-color: #fff;
+}
+
+body.dark-mode .attendant-container {
+  background-color: #444;
+}
+
+.attendant-title {
+  margin-top: 10px;
+}
+
+.attendant-edit-list {
+  margin-bottom: 27px;
+  align-items: center;
+  justify-content: center;
+}
+
+body.dark-mode .attendant-title {
+  background-color: #444;
+}
+
+body.dark-mode .attendant-edit-list {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #666;
+}

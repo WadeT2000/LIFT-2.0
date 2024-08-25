@@ -1,0 +1,122 @@
+/* Container styles */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  /* position: relative; */
+  box-shadow: 0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 11px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card styles */
+.pcard {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 11px 15px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+/* Grid layout for form */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Form elements styles */
+.form-grid input,
+.form-grid select,
+.form-grid textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Button styles */
+.form-button {
+  grid-column: span 3;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #333;
+  color: #ffffff;
+}
+
+body.dark-mode .card {
+  background-color: #333;
+  color: #ffffff;
+  box-shadow: 0px 9px 46px 8px rgba(255, 255, 255, 0.12), 0px 24px 38px 3px rgba(255, 255, 255, 0.14), 0px 11px 15px rgba(255, 255, 255, 0.2);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; 
+}
+
+.dark-mode .container {
+  background-color: #333;
+  /* Light effect for dark mode */
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8), 0px 0px 30px rgba(255, 255, 255, 0.6), 0px 0px 45px rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Button hover states */
+.p-button-success:hover {
+  background-color: #0056b3;
+}
+
+.p-button-warning:hover {
+  background-color: #e0a800;
+}
+
+.p-button-danger:hover {
+  background-color: #c82333;
+}
+
+.p-button-secondary {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #e7e4e4;
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  left: -500px;
+
+}
+.p-button-secondary:hover {
+  background-color: #0056b3
+}
+
+.attendant-title {
+  margin-top: 10px;
+}
+
+.attendant-edit-list {
+  margin-bottom: 27px;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-list {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

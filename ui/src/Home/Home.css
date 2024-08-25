@@ -1,0 +1,365 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+.homepage {
+  padding: 20px;
+}
+
+.preview-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 15px;
+  max-width: 800px;
+}
+
+.preview-column {
+  padding: 0 15px;
+  font-size: 30px;
+  color: yellow;
+  text-align: center;
+  border: 2px solid #d1d5db;
+  border-radius: 12px;
+  line-height: 1.2;
+  margin: 10px;
+  background-color: #333;
+  max-height: 300px; 
+  overflow-y: auto;
+  width: 650px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px; 
+  
+}
+
+.header-name, .header-destination {
+  margin: 0;
+  width: 45%;
+  font-size: 24px;
+  text-align: center;
+}
+
+.patient-destination-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-destination-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; 
+}
+
+.patient-name {
+  width: 45%; 
+}
+
+.patient-destination {
+  width: 45%; 
+}
+
+/* Scrollbar styling */
+.preview-column::-webkit-scrollbar {
+  width: 12px; 
+}
+
+.preview-column::-webkit-scrollbar-track {
+  background: #444; 
+  border-radius: 10px; 
+}
+
+.preview-column::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 10px; 
+  border: 3px solid #444; 
+}
+
+/* Scrollbar styling for Firefox */
+.preview-column {
+  scrollbar-width: thin; 
+  scrollbar-color: #888 #444; 
+}
+
+.preview-column::-moz-scrollbar-track {
+  border-radius: 10px; 
+}
+
+.preview-column::-moz-scrollbar-thumb {
+  border-radius: 10px; 
+}
+.homepage-container {
+  background-image: url("https://media.defense.gov/2021/Sep/29/2002864215/2000/2000/0/170327-F-RU983-9032.JPG");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+
+.homepage-content {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-direction: column
+}
+
+.homepage-title {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.patientbox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.patientselectbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  text-align: left;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  width: 45%;
+}
+
+.patientselectbox h2 {
+  margin-bottom: 10px;
+  font-size: x-large;
+}
+
+.patientselectbox p {
+  font-size: large;
+}
+
+.aircraftbox {
+  display: flex;
+  justify-content: center;
+}
+
+.aircraftselectbox {
+  text-align: center;
+
+}
+
+.aircraftselectbox h2 {
+  margin-bottom: 15px;
+}
+
+.patientselectbox button,
+.aircraftselectbox button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.patientselectbox button:hover,
+.aircraftselectbox button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+
+}
+
+.aircraft-dropdown {
+  appearance: none;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10 px 30px 10px 10px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  width: 200px;
+  transition: all 0.3s ease;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% -10px) center;
+  text-align: center;
+  margin: 15px;
+  margin-bottom: 27px;
+}
+
+.aircraft-dropdown:hover {
+  background-color: #cdcaca;
+}
+
+.airplane-preview {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-areas:
+    "la ll rl ra";
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.preview-ambulatory,
+.preview-litter {
+  background-color: #f0f8ff;
+  border: 1px solid #a0d8ef;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+button.logout-button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #a00505;
+  color: #e7e4e4;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  right: 30px;
+
+}
+
+
+button.logout-button:hover {
+  background-color: #db1111;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+button.previous-page-button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #e7e4e4;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 30px;
+}
+
+button.previous-page-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.preview-ambulatory.la,
+.preview-litter.la {
+  grid-area: la;
+}
+
+.preview-ambulatory.ra,
+.preview-litter.ra {
+  grid-area: ra;
+}
+
+.preview-litter.ll {
+  grid-area: ll;
+}
+
+.preview-litter.rl {
+  grid-area: rl;
+}
+
+.p-button.p-component {
+  margin: 15px;
+  margin-bottom: 20px;
+}
+
+.AmbulatorySlot {
+  color: #002244;
+}
+
+.LitterSlot {
+  color: #AA0000;
+}
+
+
+@media (max-width: 768px) {
+  .aircraft-dropdown {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .airplane-preview {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "la"
+      "ll"
+      "rl"
+      "ra";
+  }
+}
+
+.loadplanbox {
+  max-width: 420px; 
+  margin: 0 auto;
+}
+
+.loadplanbox .p-listbox-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.loadplanbox .p-listbox-item div {
+  flex: 1;  
+  justify-content: left;
+  margin-right: 20px;
+}
+
+.loadplanbox .p-listbox-item .p-radiobutton {
+  margin-left: 250px; 
+}
+
+
+.aircraftselectbox  .p-listbox-item .p-radiobutton {
+  /* max-width: 400px;  */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 430px; 
+}
+
+.aircraft-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dark-mode .aircraft-item{
+  color: white;
+}
+
+.aircraft-button {
+  display: flex;
+  justify-content: space-around;
+}

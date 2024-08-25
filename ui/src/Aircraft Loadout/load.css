@@ -1,0 +1,277 @@
+.load-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+}
+
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stops {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+}
+
+.airplane-section {
+  flex: 1;
+  margin-right: 20px;
+  overflow-y: auto;
+}
+
+.airplane-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.airplane-body {
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #d1d5db;
+  margin: 10px;
+}
+
+.airplane-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-section,
+.right-section {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-section {
+  width: 60%;
+}
+
+.ambulatory-seats,
+.litter-beds {
+  background-color: #b3e0ff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.ambulatory-seats::before {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.ambulatory-seats {
+  width: 68%;
+  margin-top: 0;
+}
+
+.litter-beds {
+  background-color: #ffb3b3;
+  width: 88%;
+  margin-top: 0px;
+}
+
+
+.litter-beds::before {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.litter-beds-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3px;
+}
+
+
+.ambulatory-seats::before {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5 px;
+  margin-top: 5 px;
+}
+
+.litter-beds::before {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 40px;
+}
+
+.stops {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.stops-list {
+  font-size: 25px;
+}
+
+.custom-button {
+  background-color: #6c757d;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.custom-button i {
+  margin-right: 0.5rem;
+}
+
+.custom-button:hover {
+  background-color: #5a6268;
+}
+
+.auto-assign-btn {
+  padding: 10px;
+  margin-left: 25px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auto-assign-btn button:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .auto-assign-btn button {
+  background-color: #555;
+}
+
+.dark-mode .auto-assign-btn button:hover {
+  background-color: #777;
+}
+
+
+@media (max-width: 768px) {
+  .airplane-body {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section,
+  .center-section {
+    width: 100%;
+    margin-bottom: 20px;
+    /* margin-top: 40px; */
+  }
+
+  .litter-beds-container {
+    flex-direction: column;
+  }
+
+  .litter-beds {
+    width: 100%;
+  }
+}
+
+/* Default Styles */
+.person-list {
+  color: #000;
+  height: 100%;
+  padding-top: 17px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .person-list {
+  color: #ffffff;
+}
+
+/* Other related dark mode styles */
+body.dark-mode .load-container {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode .stops {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+body.dark-mode .airplane-body {
+  background-color: #2c2c2c;
+}
+
+/* Ensure card components are also dark-themed */
+body.dark-mode .load-card {
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+.topboxesload{
+  display: flex;
+  flex-direction: row;
+}
+
+body.dark-mode .load-card {
+  background-color: #2c2c2c;
+  color: #ffff;
+  box-shadow: none;
+  border: 2px solid #ffff;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.p-card .p-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  margin-bottom: 0.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 20px; */
+  
+}
+.edit-list {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; 
+}
+
+.p-card {
+  border-radius: 20px;
+  
+}
+
+
+
+/* body.dark-mode .p-card {
+  background-color: #333;
+  color: #FFFFFF;
+  box-shadow: 0px 9px 46px 8px rgba(255, 255, 255, 0.12), 0px 24px 38px 3px rgba(255, 255, 255, 0.14), 0px 11px 15px rgba(255, 255, 255, 0.2);
+} */
+
+body.dark-mode .load-card {
+  height: 200px;  
+  width: 500px;   
+ 
+}
